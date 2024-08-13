@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Date Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Next Order Date</h2>
+        <p>The next order date after holding for {{ days_to_hold }} days is: {{ next_order_date }}</p>
+        <p><a href="/">Calculate Again</a></p>
+    </div>
+</body>
+</html>
