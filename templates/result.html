@@ -28,10 +28,10 @@
       <h2>Results</h2>
 
       <!-- Display next order date if calculated -->
-      {% if next_order_date %}
+      {% if next_order_date and start_date %}
       <p>
-        The next order date after holding for {{ days_to_hold }} days is: {{
-        next_order_date }}
+        Order held from {{start_date}} - {{next_order_date}} ({{ days_to_hold }}
+        days)
       </p>
       {% endif %}
 
